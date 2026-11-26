@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /.well-known/
+
+Sitemap: https://devexa-hub.vercel.app/sitemap.xml

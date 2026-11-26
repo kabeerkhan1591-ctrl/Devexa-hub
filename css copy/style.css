@@ -1117,3 +1117,35 @@ button:hover > .roll .roll-in {
     aspect-ratio: 1 / 1;
   }
 }
+
+/* Show content for crawlers / visitors without JavaScript */
+@media (scripting: none) {
+  .loader {
+    display: none;
+  }
+
+  .rv,
+  .ln > span {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+  }
+
+  .word {
+    opacity: 1;
+  }
+}
+
+.nf {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 18px;
+  text-align: center;
+  padding: 4vw;
+}
+
+.nf h1 {
+  font-size: clamp(80px, 18vw, 200px);
+}

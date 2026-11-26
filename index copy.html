@@ -6,13 +6,75 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Devexa Hub · Web, App and AI Agency</title>
+    <title>Devexa Hub | Web Design, App Development &amp; AI Agency</title>
     <meta
       name="description"
-      content="Devexa Hub designs and builds websites, mobile apps and AI-powered products."
+      content="Devexa Hub is a young web, app and AI agency. We design and build fast websites, mobile apps, AI chatbots and automation for growing businesses."
     />
     <meta name="theme-color" content="#f6f6f4" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Devexa Hub" />
+    <link rel="canonical" href="https://devexa-hub.vercel.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Devexa Hub" />
+    <meta property="og:title" content="Devexa Hub | Digital products built to move" />
+    <meta
+      property="og:description"
+      content="Web design, mobile apps and AI tools built by a sharp young team. Let's build something."
+    />
+    <meta property="og:url" content="https://devexa-hub.vercel.app/" />
+    <meta property="og:image" content="https://devexa-hub.vercel.app/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Devexa Hub | Digital products built to move" />
+    <meta
+      name="twitter:description"
+      content="Web design, mobile apps and AI tools built by a sharp young team."
+    />
+    <meta name="twitter:image" content="https://devexa-hub.vercel.app/assets/og-image.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://devexa-hub.vercel.app/#org",
+            "name": "Devexa Hub",
+            "url": "https://devexa-hub.vercel.app/",
+            "logo": "https://devexa-hub.vercel.app/assets/logo-mark.png",
+            "email": "kabeerkhan1591@gmail.com",
+            "description": "Web design, mobile app development and AI solutions agency.",
+            "founder": [
+              { "@type": "Person", "name": "Muhammad Kabeer Khan", "jobTitle": "CEO" },
+              { "@type": "Person", "name": "Abdul Momin Khan", "jobTitle": "Co-founder" }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Devexa Hub",
+            "url": "https://devexa-hub.vercel.app/",
+            "publisher": { "@id": "https://devexa-hub.vercel.app/#org" }
+          },
+          {
+            "@type": "ItemList",
+            "name": "Devexa Hub services",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Web design and development" },
+              { "@type": "ListItem", "position": 2, "name": "Mobile apps" },
+              { "@type": "ListItem", "position": 3, "name": "AI solutions and automation" },
+              { "@type": "ListItem", "position": 4, "name": "UI / UX design" },
+              { "@type": "ListItem", "position": 5, "name": "Branding and identity" },
+              { "@type": "ListItem", "position": 6, "name": "Support and maintenance" }
+            ]
+          }
+        ]
+      }
+    </script>
     <link rel="icon" href="assets/logo-mark.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/logo-mark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@300;400;600;700&display=swap"
@@ -277,12 +339,13 @@
         <a class="mail rv" href="mailto:kabeerkhan1591@gmail.com"
           >kabeerkhan1591@gmail.com</a
         >
-        <form class="rv" id="form">
-          <input name="name" placeholder="Your name" required />
-          <input name="email" type="email" placeholder="Email address" required />
+        <form class="rv" id="form" autocomplete="on" novalidate>
+          <input name="name" placeholder="Your name" required maxlength="80" autocomplete="name" />
+          <input name="email" type="email" placeholder="Email address" required maxlength="120" autocomplete="email" />
           <textarea
             name="message"
             rows="4"
+            maxlength="2000"
             placeholder="Tell us about your project"
             required
           ></textarea>
