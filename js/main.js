@@ -174,7 +174,7 @@
     document.addEventListener("pointerleave", () => {
       cursor.classList.remove("on");
     });
-    $$("a, button, .svc").forEach((element) => {
+    $$("a, button, .svc, .member").forEach((element) => {
       element.addEventListener("pointerenter", () => {
         cursor.classList.add("big");
       });
